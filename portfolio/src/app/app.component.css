@@ -1,0 +1,147 @@
+.nav {
+    margin: 0 auto;
+    background-color: #be3144;
+    padding: 0 1.75rem;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    position: fixed;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    padding: 0;
+}
+
+.nav ul li {
+    font-size: 1.5rem;
+    list-style: none;
+    padding: 1rem;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.nav ul li:hover {
+    background-color: rgb(100, 119, 226);
+}
+
+.first {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.first h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.first p {
+    color: #be3144;
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+
+
+/*.first .center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: absolute;
+}*/
+
+.second {
+    background-color: #45567d;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 2rem;
+    text-align: center;
+}
+
+.second .projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 2.8rem;
+    overflow: hidden;
+}
+
+.second .project {
+    width: 31%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.second .project .project-title {
+    background-color: #3a3d40;
+    margin-top: -4px;
+    color: white;
+    font-size: 0.85rem;
+    padding: 15px;
+}
+
+.second .project img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.second .title {
+    font-weight: 450;
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: underline;
+    padding: 50px;
+}
+
+@media screen and (max-width:1000px) {
+    .second .project {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .second .project {
+        width: 100%;
+    }
+    .second .title {
+        font-size: 100%;
+    }
+    .second .project img {
+        height: 100%;
+    }
+}
+
+.second button {
+    background-color: #3a3d40;
+    color: white;
+    font-weight: 450;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 30px auto 0 auto;
+}
+
+.second button:hover {
+    background-color: #be3144;
+    transform: translateX(5px);
+}

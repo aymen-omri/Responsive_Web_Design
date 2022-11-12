@@ -1,0 +1,31 @@
+<div class="nav">
+    <ul>
+        <li><a href="">About</a></li>
+        <li><a href="">Work</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+</div>
+<div class="first">
+    <div class="center">
+        <h1>Hey I am Aymen</h1>
+        <p>a web developer</p>
+    </div>
+</div>
+
+<div class="second">
+    <div class="title">
+        <h1>This are some of my projects</h1>
+    </div>
+    <div class="projects">
+        <div class="project" *ngFor="let elem of projects">
+            <img src="{{elem.picture}}" alt="img" />
+            <div class="project-title">
+                <h1>{{elem.name}}</h1>
+            </div>
+        </div>
+    </div>
+
+    <button>Show all ></button>
+
+
+</div>
